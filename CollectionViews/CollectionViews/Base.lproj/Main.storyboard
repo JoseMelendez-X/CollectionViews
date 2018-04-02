@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Icon Detail View Controller-->
         <scene sceneID="zms-gj-XnT">
             <objects>
-                <viewController id="fVq-Xy-oSh" sceneMemberID="viewController">
+                <viewController id="fVq-Xy-oSh" customClass="IconDetailViewController" customModule="CollectionViews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zg1-Sh-auS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,6 +171,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ImM-mG-q8h"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="RGk-e1-KZT" id="Ks1-wB-BmR"/>
+                        <outlet property="iconImageView" destination="U59-u0-SzH" id="P5e-Qq-Nw8"/>
+                        <outlet property="nameLabel" destination="adQ-JK-0Xg" id="nBa-Wc-LAv"/>
+                        <outlet property="priceLabel" destination="tBD-0S-ny2" id="Vkc-Hg-srr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPn-e3-ull" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="kxd-U7-xzi" userLabel="Exit" sceneMemberID="exit"/>

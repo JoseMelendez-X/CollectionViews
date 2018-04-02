@@ -53,6 +53,17 @@ private var iconSet = [Icon(name: "candle", price: 2.99, isFeatured: false), Ico
         
     }
     
+    //pass icon to detail view
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showIconDetail" {
+            if let indexPaths = collectionView?.indexPathsForSelectedItems {
+                let destinationVC = segue.destination as! IconDetailViewController
+                destinationVC.icon = iconSet[indexPaths[0].row]
+                collectionView?.deselectItem(at: indexPaths[0], animated: true)
+            }
+        }
+    }
+    
     
     
     
