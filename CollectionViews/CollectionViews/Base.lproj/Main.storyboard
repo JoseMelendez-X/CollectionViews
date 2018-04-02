@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iJA-df-79h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Icon Store-->
         <scene sceneID="RhR-Rt-KNA">
             <objects>
-                <collectionViewController id="BnX-O4-hNB" sceneMemberID="viewController">
+                <collectionViewController id="BnX-O4-hNB" customClass="IconCollectionViewController" customModule="CollectionViews" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="53I-QE-nHZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="jaY-Kg-oGY">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="jaY-Kg-oGY" customClass="IconCollectionViewCell" customModule="CollectionViews" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -54,6 +54,10 @@
                                     <constraint firstAttribute="bottom" secondItem="hul-tg-8oE" secondAttribute="bottom" id="xMF-DM-gjg"/>
                                     <constraint firstAttribute="trailing" secondItem="hul-tg-8oE" secondAttribute="trailing" id="xeR-ZB-LZn"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="iconImageView" destination="7Ls-dh-TZJ" id="QDV-W5-C26"/>
+                                    <outlet property="iconPriceLabel" destination="hul-tg-8oE" id="N5P-UJ-FUP"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
