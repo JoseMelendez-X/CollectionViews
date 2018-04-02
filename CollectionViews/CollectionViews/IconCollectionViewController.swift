@@ -15,6 +15,7 @@ class IconCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //prefers large titles
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
@@ -44,6 +45,12 @@ private var iconSet = [Icon(name: "candle", price: 2.99, isFeatured: false), Ico
         
         
         return cell
+    }
+    
+    //unwind segue
+
+    @IBAction func unwindToHome(segue: UIStoryboardSegue) {
+        
     }
     
     

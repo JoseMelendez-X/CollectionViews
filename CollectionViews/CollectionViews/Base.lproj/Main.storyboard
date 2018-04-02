@@ -59,6 +59,7 @@
                                 <connections>
                                     <outlet property="iconImageView" destination="7Ls-dh-TZJ" id="QDV-W5-C26"/>
                                     <outlet property="iconPriceLabel" destination="hul-tg-8oE" id="N5P-UJ-FUP"/>
+                                    <segue destination="fVq-Xy-oSh" kind="presentation" identifier="showIconDetail" id="8wD-sq-ADs"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -148,6 +149,9 @@
                                 <state key="normal" image="close">
                                     <color key="titleColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kxd-U7-xzi" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="wEa-nM-It9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -169,8 +173,9 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPn-e3-ull" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="kxd-U7-xzi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1562" y="134"/>
+            <point key="canvasLocation" x="1746" y="134"/>
         </scene>
     </scenes>
     <resources>
