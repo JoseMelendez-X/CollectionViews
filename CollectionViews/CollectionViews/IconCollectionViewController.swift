@@ -12,6 +12,12 @@ private let reuseIdentifier = "Cell"
 
 class IconCollectionViewController: UICollectionViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     
 private var iconSet = [Icon(name: "candle", price: 2.99, isFeatured: false), Icon(name: "cat", price: 4.92, isFeatured: true), Icon(name: "dribbble", price: 2.34, isFeatured: false), Icon(name: "ghost", price: 2.34, isFeatured: false), Icon(name: "hat", price: 2.34, isFeatured: true), Icon(name: "owl", price: 2.34, isFeatured: false), Icon(name: "pot", price: 2.34, isFeatured: false), Icon(name: "pumkin", price: 2.34, isFeatured: false), Icon(name: "rip", price: 2.34, isFeatured: false), Icon(name: "skull", price: 2.34, isFeatured: false), Icon(name: "sky", price: 2.34, isFeatured: true), Icon(name: "toxic", price: 2.34, isFeatured: false), Icon(name: "ic_book", price: 2.34, isFeatured: false), Icon(name: "ic_backpack", price: 2.34, isFeatured: true), Icon(name: "ic_camera", price: 2.34, isFeatured: false), Icon(name: "ic_coffee", price: 2.34, isFeatured: false),Icon(name: "ic_glasses", price: 2.34, isFeatured: false),Icon(name: "ic_ice_cream", price: 2.34, isFeatured: false), Icon(name: "ic_smoking_pipe", price: 2.34, isFeatured: true), Icon(name: "ic_vespa", price: 2.34, isFeatured: true)  ]
     //MARK: - Required Data Source Methods
